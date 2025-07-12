@@ -13,17 +13,14 @@ Permite operações completas de CRUD em cursos, com uma modelagem simples e cla
 Os cursos são classificados por categorias, utilizando enums para garantir integridade e padronização dos dados.
 Além disso, o projeto adota o uso de DTOs (Data Transfer Objects) para desacoplar as entidades internas da aplicação dos dados expostos nas requisições e respostas da API, promovendo uma arquitetura mais limpa e segura.
 
----
-
 ## 🛠 Tecnologias
 
 - Java 22  
 - Spring Boot  
 - Spring Data JPA  
-- PostgreSQL  
+- PostgreSQL
+- Swagger
 - Docker & Docker Compose  
-
----
 
 ## 🚀 Como rodar
 
@@ -45,3 +42,16 @@ cd courses-api
 
 # Suba o banco e a aplicação com Docker Compose
 docker-compose up --build
+```
+
+## 📬 Como usar a API
+
+Com a aplicação rodando (via Docker ou localmente), você pode acessar a documentação interativa da API gerada automaticamente pelo Swagger:
+
+### 🔗 Acesse o [Swagger UI](http://localhost:8080/swagger-ui/index.html)
+Por meio dessa interface, é possível:
+
+- Visualizar todos os endpoints disponíveis
+- Enviar requisições diretamente do navegador (GET, POST, PUT, DELETE)
+- Testar filtros, paginação e payloads
+- Ver modelos de entrada e saída (DTOs)
